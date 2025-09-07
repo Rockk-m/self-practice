@@ -1,12 +1,26 @@
 ความรู้ที่ได้
 
-1. Array ของ JS เก็บได้หลาย type → ใช้งานจริงเวลาประมวลผล data
-2. ใช้ loop ผ่าน array บ่อย เช่น render list หรือ process data
-3. Object comparison ใช้ === เช็ก reference ไม่ใช่ค่า
-4. shallow equality เช็ก key+value ชั้นเดียว → nested ต้อง deep equality
-5. Object.keys() + for...of → เช็ก property อ่านง่าย ไม่ลาก inherited
-6. Function รับหลาย parameter + error handling (เช่น division by zero)
-7. switch-case อ่านง่ายกว่า if-else หลายชั้น + มี default case
-8. filter/map/reduce → คัด, แปลง, สรุปค่าใน array
-9. sort() → จัดเรียงตามเงื่อนไข, ใช้ได้กับ number+string
-10. toLowerCase()/toUpperCase()/toLocaleString() → จัดการข้อความ+ตัวเลข
+สัปดาห์ที่ 1 – Array Basics & Looping
+เข้าใจว่า JS array เก็บได้หลาย type ไม่จำกัด
+ฝึกการ loop ผ่าน array → ใช้งานจริงบ่อย (render list, process data)
+ใช้ typeof ในการ debug หรือจัดการข้อมูลหลายชนิด
+
+สัปดาห์ที่ 2 – Object Comparison
+รู้ว่า === เช็กแค่ reference → object ที่เหมือนกันก็ไม่เท่ากันถ้าไม่ใช่ตัวเดียว
+ฝึก shallow equality (key + value ชั้นเดียว) และรู้ข้อจำกัดเมื่อเจอ nested object
+ใช้ Object.keys() + for...of เช็ก property ได้ง่ายและปลอดภัยกว่า for...in
+
+สัปดาห์ที่ 3 – Function & Error Handling
+ฝึกการรับ parameter หลายตัวในฟังก์ชัน
+ใช้ conditional logic ตรวจเงื่อนไขพิเศษ เช่น division by zero → return error message
+เรียนรู้การใช้ switch-case แทน if-else หลายชั้น พร้อม default case
+
+สัปดาห์ที่ 4 – Array Methods (filter, map, reduce)
+filter() → คัดข้อมูลออกตามเงื่อนไข
+map() → แปลงข้อมูลให้อยู่ในรูปใหม่
+reduce() → รวมค่าใน array ให้เหลือค่าเดียว (เช่น sum, avg)
+
+สัปดาห์ที่ 5 – Array & String Utilities
+sort() → จัดเรียงข้อมูลได้ทั้ง number และ string
+toLowerCase() / toUpperCase() → ใช้ normalize string ก่อนเปรียบเทียบ
+toLocaleString() → ฟอร์แมตตัวเลขให้อ่านง่าย เช่นใส่ comma
