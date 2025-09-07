@@ -1,0 +1,12 @@
+ความรู้ที่ได้
+
+1. Array ของ JS เก็บได้หลาย type → ใช้งานจริงเวลาประมวลผล data
+2. ใช้ loop ผ่าน array บ่อย เช่น render list หรือ process data
+3. Object comparison ใช้ === เช็ก reference ไม่ใช่ค่า
+4. shallow equality เช็ก key+value ชั้นเดียว → nested ต้อง deep equality
+5. Object.keys() + for...of → เช็ก property อ่านง่าย ไม่ลาก inherited
+6. Function รับหลาย parameter + error handling (เช่น division by zero)
+7. switch-case อ่านง่ายกว่า if-else หลายชั้น + มี default case
+8. filter/map/reduce → คัด, แปลง, สรุปค่าใน array
+9. sort() → จัดเรียงตามเงื่อนไข, ใช้ได้กับ number+string
+10. toLowerCase()/toUpperCase()/toLocaleString() → จัดการข้อความ+ตัวเลข
