@@ -1,1 +1,28 @@
- 
+ 1.Object Literal แบบง่าย
+ const person = {
+    name: "ชื่อ",
+    age: 25
+}
+
+2.Constructor Function
+ function Person(name, age, birthdate, gender) {
+    this.name = name
+    this.age = age
+    this.birthdate = birthdate
+    this.gender = gender
+}
+สร้าง template สำหรับสร้าง object หลายๆ ตัว
+ใช้ this เพื่ออ้างอิงถึง object ที่จะถูกสร้าง
+ใช้กับ new Person() เพื่อสร้าง instance ใหม่
+
+3.Method ใน Object
+getGender(){return this.gender}
+ฟังก์ชันที่อยู่ภายใน object
+ใช้ this เพื่อเข้าถึง property ของ object เดียวกัน
+
+4.Destructuring
+Array: 
+const [, item2] = colors 
+Object:
+const {isbn, title} = b1      
+const {authors: {firstname}} = b1
