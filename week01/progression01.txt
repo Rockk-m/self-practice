@@ -1,37 +1,11 @@
-1. การสร้าง Array
+ความรู้ที่ได้
 
-Array Literal: let arr = [1, 2, 3]
-Array Constructor: new Array(), new Array(10), new Array(1,5,7)
-Array.of(): Array.of(5) - สร้าง array ที่มีค่า 5
-Array.from(): Array.from(str) - แปลง string หรือ iterable object เป็น array
+practice 1: 
+-เข้าใจว่า array ของ JS ไม่จำกัดแค่ type เดียว เหมือนภาษา strongly typed อื่น ๆ
+-ฝึกการ loop ผ่าน array → ใช้งานจริงบ่อยมาก (render list, process data)
+-รู้จัก typeof → มีประโยชน์เวลา debug หรือต้องจัดการข้อมูลหลายชนิด
 
-2. คุณสมบัติของ Array
-
-Mixed Data Types: Array สามารถเก็บข้อมูลหลายประเภทได้ (number, string, boolean, object, undefined, NaN, Infinity)
-Dynamic Length: ความยาวของ array สามารถเปลี่ยนแปลงได้
-Zero-based Indexing: index เริ่มต้นที่ 0
-
-3. การเข้าถึงข้อมูล
-
-Length: arr.length - หาความยาวของ array
-First Element: arr[0] - element แรก
-Last Element: arr[arr.length - 1] - element สุดท้าย
-Negative Index: arr[-1] จะได้ undefined (ไม่เหมือน Python)
-
-4. การวนลูป (Loop)
-
-for loop: for (let i = 0; i < arr.length; i++)
-for...in loop: for (i in x) - วนลูปผ่าน index
-การใช้ typeof() เพื่อตรวจสอบประเภทข้อมูล
-
-5. การจัดการ Array
-
-push(): เพิ่ม element ท้าย array
-splice(): ลบ element ตามตำแหน่งที่กำหนด
-delete: ลบ element แต่ทิ้ง empty slot ไว้
-
-6. Complex Array 
-
-Array of Objects: [{type:"iPad", model:"11"}]
-Nested Arrays: [[1,2,3], ["a","b","c"]]
-Array ใน Object: {name: "iPhone", year: [2019, 2020]}
+practice 2:
+-เข้าใจกลไกการเปรียบเทียบ object → สำคัญเวลาเขียนโค้ดที่เกี่ยวกับ data/state
+-ใช้งานจริงเยอะ โดยเฉพาะเวลาเขียน React/Redux → ใช้ shallow compare เพื่อตัดสินใจว่าจะ render ใหม่มั้ย
+-ได้ฝึกการคิด algorithm เล็ก ๆ (วน loop, เช็กค่า, return true/false)

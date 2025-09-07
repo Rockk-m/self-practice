@@ -1,1 +1,20 @@
- 
+ ความรู้ที่ได้
+
+1.Function Parameter Handling
+เรียนรู้การรับ parameter 3 ตัว และใช้งานในฟังก์ชัน
+เข้าใจการส่งค่า arguments ต่างๆ เข้าไปในฟังก์ชัน
+
+2. Conditional Logic & Error Handling
+if (operation === "/" && num2 === 0) {
+    return "Cannot divide by zero";
+}
+ฝึกการเช็คเงื่อนไขพิเศษก่อนทำการคำนวณ
+เรียนรู้การป้องกัน runtime error (division by zero)
+การ return error message ที่มีความหมาย
+
+3. เข้าใจการใช้ switch-case แทน if-else หลายชั้น
+เรียนรู้ default case สำหรับจัดการกับ input ที่ไม่คาดคิด
+
+4. String Comparison
+ฝึกการเปรียบเทียบ string (operation === "+")
+เข้าใจ strict equality operator (===)

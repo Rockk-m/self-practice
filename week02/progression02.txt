@@ -1,28 +1,14 @@
- 1.Object Literal แบบง่าย
- const person = {
-    name: "ชื่อ",
-    age: 25
-}
+ความรู้ที่ได้
 
-2.Constructor Function
- function Person(name, age, birthdate, gender) {
-    this.name = name
-    this.age = age
-    this.birthdate = birthdate
-    this.gender = gender
-}
-สร้าง template สำหรับสร้าง object หลายๆ ตัว
-ใช้ this เพื่ออ้างอิงถึง object ที่จะถูกสร้าง
-ใช้กับ new Person() เพื่อสร้าง instance ใหม่
+1.เรื่อง Object comparison
+เวลาเขียน book1 === book2 มันจะได้ false เสมอ เพราะ === เช็กแค่ reference
 
-3.Method ใน Object
-getGender(){return this.gender}
-ฟังก์ชันที่อยู่ภายใน object
-ใช้ this เพื่อเข้าถึง property ของ object เดียวกัน
+2.shallowEquality เช็ค property ชั้นเดียว เช่น key กับ value ต้องตรงกัน
+แต่ถ้าเจอ object ซ้อนข้างใน (nested) มันจะเช็กไม่ถึง ต้องใช้ deep equality อีกที
 
-4.Destructuring
-Array: 
-const [, item2] = colors 
-Object:
-const {isbn, title} = b1      
-const {authors: {firstname}} = b1
+3.การใช้ Object.keys()
+Object.keys(obj) จะดึง key ทั้งหมดออกมาเป็น array → ใช้เช็กจำนวน key 
+หรือวน loop เพื่อเข้าถึงค่าข้างใน
+
+4.การใช้ for...of กับ array ของ keys
+เป็นวิธีที่อ่านง่ายกว่า for...in เพราะมันไม่ลาก inherited properties มาด้วย
